@@ -1,0 +1,151 @@
+﻿insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (845, '报表资源管理', null, 'module', null, null, '报表资源管理', null, null, 2, 'omp', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (49, '资源管理', 'resource/resource.htm', 'menu', 46, null, null, to_date('06-11-2014 18:20:04', 'dd-mm-yyyy hh24:mi:ss'), to_date('06-11-2014 18:20:12', 'dd-mm-yyyy hh24:mi:ss'), 3, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (50, '添加资源', 'add.htm', 'op', 49, null, null, to_date('06-11-2014 18:20:04', 'dd-mm-yyyy hh24:mi:ss'), to_date('06-11-2014 18:20:12', 'dd-mm-yyyy hh24:mi:ss'), null, null, 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (81, '角色管理', 'role/role.htm', 'menu', 46, null, null, to_date('06-11-2014 18:20:04', 'dd-mm-yyyy hh24:mi:ss'), to_date('16-12-2014 09:49:33', 'dd-mm-yyyy hh24:mi:ss'), 2, 'per', 1, null, null, null, null, 'role_codeasdsa', null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (82, '组别管理', 'group/group.htm', 'menu', 46, null, null, to_date('06-11-2014 18:20:04', 'dd-mm-yyyy hh24:mi:ss'), to_date('06-11-2014 18:20:12', 'dd-mm-yyyy hh24:mi:ss'), 4, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (83, '人员管理', 'member/member.htm', 'menu', 46, null, null, to_date('06-11-2014 18:20:04', 'dd-mm-yyyy hh24:mi:ss'), to_date('06-11-2014 18:20:12', 'dd-mm-yyyy hh24:mi:ss'), 5, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (46, '本地资源管理', null, 'module', null, null, '本地资源管理', to_date('21-11-2014 10:51:28', 'dd-mm-yyyy hh24:mi:ss'), to_date('28-11-2014 09:57:36', 'dd-mm-yyyy hh24:mi:ss'), 1, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2084, '分配权限', 'role/saveRoleResources.htm', 'button', 81, null, null, to_date('10-12-2014 10:43:37', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:43:37', 'dd-mm-yyyy hh24:mi:ss'), 6, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2085, '新建编辑', 'resource/addOrUpdate.htm', 'button', 49, null, null, to_date('10-12-2014 10:44:46', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:44:46', 'dd-mm-yyyy hh24:mi:ss'), 1, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2086, '详情', 'resource/showDetail.htm', 'button', 49, null, null, to_date('10-12-2014 10:56:50', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:57:08', 'dd-mm-yyyy hh24:mi:ss'), 2, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2860, '代理商按地推排名', '/activeopr', 'menu', 680, null, null, to_date('20-05-2015 17:37:40', 'dd-mm-yyyy hh24:mi:ss'), to_date('20-05-2015 17:37:40', 'dd-mm-yyyy hh24:mi:ss'), 1, 'omp', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2088, '查看角色', 'role/getRoleCodeAndNameList.htm', 'button', 82, null, null, to_date('10-12-2014 10:43:37', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:43:37', 'dd-mm-yyyy hh24:mi:ss'), 6, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2089, '删除', 'group/deleteGroup.htm', 'button', 82, null, null, to_date('09-12-2014 10:03:31', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:41:59', 'dd-mm-yyyy hh24:mi:ss'), 3, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2090, '详情', 'group/showDetail.htm', 'button', 82, null, null, to_date('10-12-2014 10:41:40', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:41:40', 'dd-mm-yyyy hh24:mi:ss'), 4, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2091, '新建编辑', 'group/addOrUpdateGroup.htm', 'button', 82, null, '又新增就有编辑权限', to_date('10-12-2014 10:40:01', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:54:18', 'dd-mm-yyyy hh24:mi:ss'), 1, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2092, '重置密码', 'member/resetPassword.htm', 'button', 83, null, null, to_date('10-12-2014 10:43:37', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:43:37', 'dd-mm-yyyy hh24:mi:ss'), 6, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2093, '删除', 'member/deleteMember.htm', 'button', 83, null, null, to_date('09-12-2014 10:03:31', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:41:59', 'dd-mm-yyyy hh24:mi:ss'), 3, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2094, '详情', 'member/showDetail.htm', 'button', 83, null, null, to_date('10-12-2014 10:41:40', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:41:40', 'dd-mm-yyyy hh24:mi:ss'), 4, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2095, '新建编辑', 'member/addOrUpdateMember.htm', 'button', 83, null, '又新增就有编辑权限', to_date('10-12-2014 10:40:01', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:54:18', 'dd-mm-yyyy hh24:mi:ss'), 1, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2087, '删除', 'resource/del.htm', 'button', 49, null, null, to_date('10-12-2014 10:57:48', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:57:48', 'dd-mm-yyyy hh24:mi:ss'), 3, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2060, '删除', 'role/del.htm', 'button', 81, null, null, to_date('09-12-2014 10:03:31', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:41:59', 'dd-mm-yyyy hh24:mi:ss'), 3, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2082, '详情', 'role/showDetail.htm', 'button', 81, null, null, to_date('10-12-2014 10:41:40', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:41:40', 'dd-mm-yyyy hh24:mi:ss'), 4, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2080, '新建编辑', 'role/addOrUpdate.htm', 'button', 81, null, '又新增就有编辑权限', to_date('10-12-2014 10:40:01', 'dd-mm-yyyy hh24:mi:ss'), to_date('10-12-2014 10:54:18', 'dd-mm-yyyy hh24:mi:ss'), 1, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2083, '查看资源', 'resource/getPartialDistriResources.htm', 'button', 81, null, null, to_date('10-12-2014 10:43:00', 'dd-mm-yyyy hh24:mi:ss'), to_date('27-12-2014 11:02:27', 'dd-mm-yyyy hh24:mi:ss'), 5, 'per', 1, null, null, null, null, null, null);
+
+insert into UC_RESOURCE (ID, NAME, RESOURCE_ACTION, RESOURCE_TYPE, P_ID, ICON, DESCRIPTION, CREATE_TIME, UPDATE_TIME, ORDER_BY, SYS_CODE, STATUS, OLD_ID, OLD_PID, CREATER_ID, MODIFIER_ID, RESOURCE_CODE, TEMP_P_ID)
+values (2220, '分配临时权限', 'memberTempPriv/distriTempResource.htm', 'button', 83, null, null, to_date('26-12-2014 15:32:29', 'dd-mm-yyyy hh24:mi:ss'), to_date('26-12-2014 15:35:13', 'dd-mm-yyyy hh24:mi:ss'), 5, 'per', 1, null, null, null, null, null, null);
+
+
+
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (802, 'per', 'per_admin', 142, 46);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (803, 'per', 'per_admin', 142, 81);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (804, 'per', 'per_admin', 142, 2084);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (805, 'per', 'per_admin', 142, 49);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (806, 'per', 'per_admin', 142, 2085);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (807, 'per', 'per_admin', 142, 2086);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (808, 'per', 'per_admin', 142, 2087);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (809, 'per', 'per_admin', 142, 82);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (810, 'per', 'per_admin', 142, 2091);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (811, 'per', 'per_admin', 142, 2090);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (812, 'per', 'per_admin', 142, 2088);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (813, 'per', 'per_admin', 142, 83);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (814, 'per', 'per_admin', 142, 2095);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (815, 'per', 'per_admin', 142, 2093);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (816, 'per', 'per_admin', 142, 2094);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (817, 'per', 'per_admin', 142, 2220);
+
+insert into UC_ROLE_RES (ID, SYS_CODE, ROLE_CODE, ROLE_ID, RESOURCE_ID)
+values (818, 'per', 'per_admin', 142, 2092);
+
+
+insert into UC_ROLE (ID, ROLE_CODE, NAME, DESCRIPTION, CREATE_TIME, UPDATE_TIME, STATUS, SYS_CODE, OLD_ID, CREATER_ID, MODIFIER_ID)
+values (7787, 'common', '普通用户', null, to_date('12-08-2015 16:58:11', 'dd-mm-yyyy hh24:mi:ss'), to_date('12-08-2015 16:58:11', 'dd-mm-yyyy hh24:mi:ss'), 1, null, null, 200000016, 200000016);
+
+insert into UC_ROLE (ID, ROLE_CODE, NAME, DESCRIPTION, CREATE_TIME, UPDATE_TIME, STATUS, SYS_CODE, OLD_ID, CREATER_ID, MODIFIER_ID)
+values (142, 'per_admin', '权限管理员', null, to_date('15-11-2014 11:39:07', 'dd-mm-yyyy hh24:mi:ss'), to_date('12-08-2015 16:32:41', 'dd-mm-yyyy hh24:mi:ss'), 1, 'per', null, null, null);
+
+
+insert into UC_GROUP (ID, GROUP_CODE, GROUP_NAME, CREATE_TIME, UPDATE_TIME, STATUS, GROUP_TYPE, DESCRIPTION, CREATER_ID, MODIFIER_ID)
+values (2000, 'per_group', '用户中心权限管理组', null, to_date('21-11-2014 15:08:42', 'dd-mm-yyyy hh24:mi:ss'), 1, 1, null, 200000016, null);
+
+insert into UC_GROUP_ROLE (ID, GROUP_CODE, ROLE_CODE)
+values (503, 'per_group', 'per_admin');
+
+insert into UC_MEMBER (ID, ACC_NO, PASSWORD, AVATAR, NAME, MOBILE, STATUS, CREATE_TIME, UPDATE_TIME, MEMBER_TYPE, ID_CARD, BIRTH, EXTEND, USER_NICK, USER_CITY, BANK_ID, BANK_NAME, CARD_NO, AUTH_LAST_TIME, QRCODE_URL, PARTNER, SCH_ID, CHANGE_CARD_LAST_TIME, QR_EMAIL_IMAGE_URL, CAS_TYPE, CREATER_ID, MODIFIER_ID, PASSWORD_U, MEMBER_RESOURCE)
+values (100, 'perAdmin', 'E10ADC3949BA59ABBE56E057F20F883E', null, '管理员', null, 1, to_date('12-11-2014 14:37:39', 'dd-mm-yyyy hh24:mi:ss'), to_date('12-08-2015 13:47:14', 'dd-mm-yyyy hh24:mi:ss'), null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1, 200000016, null, null, null);
+
+
+insert into UC_MEMBER_GROUP (ID, MEMBER_ID, GROUP_CODE, STATUS, CREATE_TIME, UPDATE_TIME)
+values (2085, 100, 'per_group', 1, null, to_date('12-08-2015 13:47:14', 'dd-mm-yyyy hh24:mi:ss'));
+
+commit;

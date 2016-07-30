@@ -1,0 +1,405 @@
+﻿-- Create table
+create table UC_RESOURCE
+(
+  id              NUMBER(11) not null,
+  name            VARCHAR2(60),
+  resource_action VARCHAR2(255),
+  resource_type   VARCHAR2(10),
+  p_id            NUMBER,
+  icon            VARCHAR2(255),
+  description     VARCHAR2(255),
+  create_time     DATE,
+  update_time     DATE,
+  order_by        NUMBER(10),
+  sys_code        VARCHAR2(64),
+  status          NUMBER(1),
+  old_id          VARCHAR2(128),
+  old_pid         VARCHAR2(128),
+  creater_id      NUMBER(19),
+  modifier_id     NUMBER(19),
+  resource_code   VARCHAR2(32),
+  temp_p_id       VARCHAR2(100)
+);
+alter table UC_RESOURCE
+  add constraint PK_UC_RESOURCE primary key (ID);
+
+  
+-- Create table
+create table UC_ROLE_RES
+(
+  id          NUMBER(11) not null,
+  sys_code    VARCHAR2(64),
+  role_code   VARCHAR2(64),
+  role_id     NUMBER(11),
+  resource_id NUMBER(11)
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table UC_ROLE_RES
+  add constraint PK_UC_ROLE_RES primary key (ID);
+
+  
+  -- Create table
+create table UC_ROLE
+(
+  id          NUMBER(11) not null,
+  role_code   VARCHAR2(64),
+  name        VARCHAR2(60),
+  description VARCHAR2(255),
+  create_time DATE,
+  update_time DATE,
+  status      NUMBER(1),
+  sys_code    VARCHAR2(64),
+  old_id      VARCHAR2(64),
+  creater_id  NUMBER(19),
+  modifier_id NUMBER(19)
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table UC_ROLE
+  add constraint PK_UC_ROLE primary key (ID);
+
+  
+  -- Create table
+create table UC_GROUP
+(
+  id          NUMBER(11) not null,
+  group_code  VARCHAR2(24),
+  group_name  VARCHAR2(100),
+  create_time DATE,
+  update_time DATE,
+  status      NUMBER(1),
+  group_type  NUMBER(1),
+  description VARCHAR2(255),
+  creater_id  NUMBER(11),
+  modifier_id NUMBER(19)
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table UC_GROUP
+  add constraint PK_UC_GROUP primary key (ID);
+
+  
+  -- Create table
+create table UC_GROUP_ROLE
+(
+  id         NUMBER(11) not null,
+  group_code VARCHAR2(64),
+  role_code  VARCHAR2(64)
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table UC_GROUP_ROLE
+  add constraint PK_UC_GROUP_ROLE primary key (ID);
+
+  
+  -- Create table
+create table UC_MEMBER_GROUP
+(
+  id          NUMBER(11) not null,
+  member_id   NUMBER(11),
+  group_code  VARCHAR2(64),
+  status      NUMBER(1),
+  create_time DATE,
+  update_time DATE
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table UC_MEMBER_GROUP
+  add constraint UC_MEMBER_GROUP_ID primary key (ID);
+  
+  
+  -- Create table
+create table UC_MEMBER
+(
+  id                    NUMBER(19) not null,
+  acc_no                VARCHAR2(100),
+  password              VARCHAR2(32),
+  avatar                VARCHAR2(100),
+  name                  VARCHAR2(64),
+  mobile                VARCHAR2(15),
+  status                NUMBER(1),
+  create_time           DATE,
+  update_time           DATE,
+  member_type           NUMBER(1),
+  id_card               VARCHAR2(256),
+  birth                 DATE,
+  extend                VARCHAR2(100),
+  user_nick             VARCHAR2(30),
+  user_city             VARCHAR2(30),
+  bank_id               NUMBER(19),
+  bank_name             VARCHAR2(60),
+  card_no               VARCHAR2(19),
+  auth_last_time        DATE,
+  qrcode_url            VARCHAR2(500),
+  partner               VARCHAR2(25),
+  sch_id                NUMBER(19),
+  change_card_last_time DATE,
+  qr_email_image_url    VARCHAR2(500),
+  cas_type              NUMBER(1),
+  creater_id            NUMBER(11),
+  modifier_id           NUMBER(19),
+  password_u            VARCHAR2(32),
+  member_resource       VARCHAR2(100)
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table UC_MEMBER
+  add constraint PK_UC_MEMBER primary key (ID);
+
+
+  
+  -- Create table
+create table RPTPUB
+(
+  ID            NUMBER(10) not null,
+  TOOLCCOLUMN   VARCHAR2(2000),
+  TOOLDSQLID    VARCHAR2(255),
+  TOOLECOLUMN   VARCHAR2(2000),
+  TOOLFLAG      VARCHAR2(255),
+  TOOLHSQLID    VARCHAR2(255),
+  TOOLMSQLID    VARCHAR2(255),
+  TOOLTITLE     VARCHAR2(2000),
+  TOOLWSQLID    VARCHAR2(255),
+  TOOLQSQLID    VARCHAR2(255),
+  TOOLYSQLID    VARCHAR2(255),
+  GATHER_COLUMN VARCHAR2(500),
+  FORMAT        VARCHAR2(2000),
+  FIELD1        VARCHAR2(255),
+  FIELD2        VARCHAR2(255)
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table RPTPUB
+  add constraint PK_RPTPUB primary key (ID);
+ Create index RPTPUB_TOOLFLAG on RPTPUB (TOOLFLAG);
+ 
+-- Create table
+create table RPTCON
+(
+  ID            NUMBER(10) not null,
+  CONMUTI       VARCHAR2(4000),
+  CONNAME       VARCHAR2(2000),
+  CONOPTION     VARCHAR2(255),
+  CONTYPE       VARCHAR2(255),
+  CONWHERE      VARCHAR2(255),
+  TOOLFLAG      VARCHAR2(255),
+  ORDER_NUM     NUMBER(2),
+  CHARTID       NUMBER(10),
+  DEFAULT_VALUE VARCHAR2(500),
+  ROW_NUM       NUMBER(2),
+  FIELD1        VARCHAR2(255),
+  FIELD2        VARCHAR2(255)
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table RPTCON
+  add constraint PK_RPTCON primary key (ID);
+ Create index RPTCON_TOOLFLAG on RPTCON (TOOLFLAG);
+ 
+  -- Create table
+create table RPTCHART
+(
+  ID          NUMBER(10) not null,
+  CHARTOPTION VARCHAR2(4000),
+  DATAVSLE    VARCHAR2(2000),
+  TOOLFLAG    VARCHAR2(255),
+  ORDER_NUM   NUMBER(2),
+  NAME        VARCHAR2(100),
+  CHARTTYPE   VARCHAR2(10),
+  DATAVSX     VARCHAR2(50),
+  FIELD1      VARCHAR2(255),
+  FIELD2      VARCHAR2(255)
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table RPTCHART
+  add constraint PK_RPTCHART primary key (ID);
+ Create index RPTCHART_TOOLFLAG on RPTCHART (TOOLFLAG);
+ 
+ 
+  -- Create table
+create table RP_REPORT_SQL
+(
+  sql_id         INTEGER not null,
+  base_count_sql VARCHAR2(4000),
+  base_sql       VARCHAR2(4000),
+  rptname        VARCHAR2(200),
+  procedure      VARCHAR2(200)
+);
+-- Create/Recreate primary, unique and foreign key constraints 
+alter table RP_REPORT_SQL
+  add constraint PK_RP_REPORT_SQL primary key (SQL_ID);
+
+CREATE TABLE RPTLOG
+(
+  ID          NUMBER(10) NOT NULL,
+  USER_NAME   VARCHAR2(50),
+  OPE_ACTION  VARCHAR2(50),
+  OPE_ID      VARCHAR2(200),
+  WASTE_TIME  VARCHAR2(10),
+  EXCEPTION   VARCHAR2(4000),
+  CREATE_TIME DATE
+);
+ALTER TABLE RPTLOG
+  ADD CONSTRAINT PK_RPTLOG PRIMARY KEY (ID);
+  CREATE INDEX RPTLOG_ACTION ON RPTLOG (OPE_ACTION);
+  
+CREATE TABLE RPTCMCON
+(
+  ID          NUMBER(10) NOT NULL,
+  TOOLFLAG   VARCHAR2(255),
+  CONFLAG  VARCHAR2(255),
+  CONWHERE      VARCHAR2(255),
+  CONVALUE  VARCHAR2(255)
+);
+ALTER TABLE RPTCMCON
+  ADD CONSTRAINT PK_RPTCMCON PRIMARY KEY (ID);
+  CREATE INDEX RPTCOMCON_FLAG ON RPTCMCON (TOOLFLAG, CONFLAG)
+
+  -- Create sequence 
+create sequence SEQ_GROUP_ROLEID
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+
+create sequence SEQ_MEMBER_GROUP
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+  
+  -- Create sequence 
+create sequence SEQ_ROLE_RESID
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+
+
+create sequence SEQ_ROLE_ROLEID
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+  
+  -- Create sequence 
+create sequence SEQ_RPTCHART
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+
+
+create sequence SEQ_RPTCON
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+  
+  -- Create sequence 
+create sequence SEQ_RPTPUB
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+
+create sequence SEQ_RP_REPORT_SQL
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+  
+  -- Create sequence 
+create sequence SEQ_UC_GROUP
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+
+  -- Create sequence 
+create sequence SEQ_UC_MEMBER_ID
+minvalue 1      
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+
+  -- Create sequence 
+create sequence SEQ_UC_RESOURCE_ID
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+
+create sequence SEQ_RPTLOG
+minvalue 1
+maxvalue 9999999999999999999999999999
+start with 10000
+increment by 1
+cache 20;
+
+CREATE SEQUENCE SEQ_RPTCMCON
+MINVALUE 1
+MAXVALUE 9999999999999999999999999999
+START WITH 10000
+INCREMENT BY 1
+CACHE 20;
+
+comment on column RPTPUB.ID is '主键';
+comment on column RPTPUB.TOOLCCOLUMN is '表格中文列名';
+comment on column RPTPUB.TOOLDSQLID is '日sql';
+comment on column RPTPUB.TOOLECOLUMN is 'sql查询结果英文别名';
+comment on column RPTPUB.TOOLFLAG is '报表标志';
+comment on column RPTPUB.TOOLHSQLID is '时sql';
+comment on column RPTPUB.TOOLMSQLID is '月sql';
+comment on column RPTPUB.TOOLTITLE is '报表标题';
+comment on column RPTPUB.TOOLWSQLID is '周sql';
+comment on column RPTPUB.TOOLQSQLID is '季sql';
+comment on column RPTPUB.TOOLYSQLID is '年sql';
+comment on column RPTPUB.GATHER_COLUMN is '汇总列';
+comment on column RPTPUB.FORMAT is '格式化';
+comment on column RPTPUB.FIELD1 is '预留列1';
+comment on column RPTPUB.FIELD2 is '预留列2';
+
+comment on column RPTCON.ID is '主键';
+comment on column RPTCON.CONMUTI is '多选或者单选时的值(可为sql)';
+comment on column RPTCON.CONNAME is '条件名称';
+comment on column RPTCON.CONOPTION is '条件类型';
+comment on column RPTCON.CONTYPE is '多媒体类型(文本,日期)';
+comment on column RPTCON.CONWHERE is '匹配sql条件';
+comment on column RPTCON.TOOLFLAG is '报表标志';
+comment on column RPTCON.ORDER_NUM is '顺序';
+comment on column RPTCON.CHARTID is '图形ID';
+comment on column RPTCON.DEFAULT_VALUE is '默认值,存放限制日期的最大值最小值';
+comment on column RPTCON.ROW_NUM is '行数';
+comment on column RPTCON.FIELD1 is '预留列1';
+comment on column RPTCON.FIELD2 is '预留列2';
+
+
+comment on column RPTCHART.ID is '行数';
+comment on column RPTCHART.CHARTOPTION is '图形option';
+comment on column RPTCHART.DATAVSLE is 'legend和数据库列对应关系';
+comment on column RPTCHART.DATAVSX is 'X轴和数据库列对应关系';
+comment on column RPTCHART.TOOLFLAG is '报表标志';
+comment on column RPTCHART.ORDER_NUM is '顺序';
+comment on column RPTCHART.NAME is '图形名称';
+comment on column RPTCHART.CHARTTYPE is '图形类型';
+comment on column RPTCHART.FIELD1 is '预留列1';
+comment on column RPTCHART.FIELD2 is '预留列2';
+
+COMMENT ON COLUMN RPTLOG.ID IS '主键';
+COMMENT ON COLUMN RPTLOG.USER_NAME IS '用户名';
+COMMENT ON COLUMN RPTLOG.OPE_ACTION IS '操作动作';
+COMMENT ON COLUMN RPTLOG.OPE_ID IS '执行的SQLID或者TOOLFLAG';
+COMMENT ON COLUMN RPTLOG.WASTE_TIME IS '消耗时间';
+COMMENT ON COLUMN RPTLOG.EXCEPTION IS '异常信息';
+COMMENT ON COLUMN RPTLOG.CREATE_TIME IS '创建时间';
+
+COMMENT ON COLUMN RPTCMCON.ID IS '主键';
+COMMENT ON COLUMN RPTCMCON.TOOLFLAG IS '报表标志';
+COMMENT ON COLUMN RPTCMCON.CONFLAG IS '条件标志';
+COMMENT ON COLUMN RPTCMCON.CONWHERE IS '匹配SQL条件';
+COMMENT ON COLUMN RPTCMCON.CONVALUE IS '参数值';
